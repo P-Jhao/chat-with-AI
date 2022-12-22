@@ -1,4 +1,4 @@
-const test = (async function () {
+(async function () {
   const resp = await API.profile();
   if (resp.code !== 0) {
     location.href = "./login.html";
@@ -112,5 +112,4 @@ const test = (async function () {
     chatContainer.scrollTop = chatContainer.scrollHeight;
   }
 
-  return formatData;
 })();
