@@ -1,7 +1,6 @@
 const test = (async function () {
   const resp = await API.profile();
   if (resp.code !== 0) {
-    alert("未登录或登录已过期");
     location.href = "./login.html";
     return;
   }

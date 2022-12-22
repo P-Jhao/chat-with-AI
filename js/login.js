@@ -28,7 +28,6 @@ form.onsubmit = async function (e) {
   const data = Object.fromEntries(formData.entries());
   const resp = await API.login(data);
   if (resp.code === 0) {
-    alert("登录成功, 点击确认跳转到聊天界面");
     location.href = "./index.html";
   } else {
     txtLoginPwdValidator.p.innerText = "账号或密码错误";
